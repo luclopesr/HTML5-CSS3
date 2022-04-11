@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Tabelas</title>
     <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
 
+        table {
+            width: 200px;
+            border-collapse: collapse;
+            border: 3px solid purple;
+        }
+
+        tr.linha {
+            background-color: lightgray;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        td#destaque {
+            background-color: rgba(128, 0, 128, 0.644);
+        }
     </style>
 </head>
 <body>
-    
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td id="destaque">C4</td>
+        </tr>
+    </table>
 </body>
 </html>
